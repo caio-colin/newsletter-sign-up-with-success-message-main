@@ -1,0 +1,109 @@
+body {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+}
+main {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.container {
+  background-color: var(--background-container);
+  padding: 20px 20px 20px 0;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px -5px var(--box-shadow-color);
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+.container .content .title {
+  font-size: 55px;
+  color: var(--title-button-color);
+  margin-bottom: 20px;
+}
+.container .content .description {
+  margin-bottom: 20px;
+  max-width: 360px;
+}
+.container .content .itens {
+  margin-bottom: 15px;
+}
+.container .content .itens li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.container .content .itens li::before {
+  content: url(../images/icon-list.svg);
+}
+#form {
+  display: flex;
+  flex-direction: column;
+}
+.container .content .span {
+  display: flex;
+  justify-content: space-between;
+}
+.container .content .email {
+  color: var(--title-button-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.container .content .email.info {
+  color: var(--invalid-color);
+}
+.container .content input[type="email"] {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid hsl(231, 7%, 60%);
+  color: hsl(231, 7%, 60%);
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.container .content input[type="email"].invalid-email {
+  border: 1px solid var(--invalid-color);
+  color: var(--invalid-color);
+  background-color: var(--invalid-background-color);
+}
+.container .content button[type="submit"] {
+  padding: 15px;
+  background: var(--title-button-color);
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.container .content button[type="submit"]:hover {
+  background: linear-gradient(to left, #ff693c, #ff5379);
+  box-shadow: 5px 5px 20px -5px var(--invalid-color);
+}
+.container.content-subscibe {
+  padding: 0px;
+}
+.container.content-subscibe .title {
+  max-width: 300px;
+}
+.container.content-subscibe .description span {
+  font-weight: 700;
+}
+.container.content-subscibe .description {
+  color: var(--background-color);
+  margin-bottom: 40px;
+}
+.container.content-subscibe img {
+  width: 50px;
+  margin-bottom: 30px;
+}
+.ocult {
+  display: none;
+}

@@ -1,0 +1,25 @@
+@media (max-width: 868px) {
+  main {
+    align-items: unset;
+    padding: unset;
+  }
+  .container {
+    flex-direction: column-reverse;
+    padding: unset;
+    border-radius: unset;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .container .content {
+    padding: 20px;
+  }
+  .container .content .title {
+    font-size: 40px;
+  }
+  .container picture img {
+    width: 100%;
+  }
+  .container .content .itens li {
+    align-items: unset;
+  }
+}

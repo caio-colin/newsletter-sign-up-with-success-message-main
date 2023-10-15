@@ -1,0 +1,8 @@
+:root {
+  --background-color: hsl(235, 18%, 26%);
+  --title-button-color: hsl(234, 29%, 20%);
+  --invalid-color: hsl(4, 100%, 67%);
+  --invalid-background-color: hsl(4, 100%, 67%, 0.15);
+  --box-shadow-color: black;
+  --background-container: white
+}
